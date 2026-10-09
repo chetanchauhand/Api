@@ -1,14 +1,15 @@
-//Even odd using filter
-import java.lang.reflect.Array;
+//Greater then 10
+
+import java.sql.Array;
 import java.util.Arrays;
 import java.util.List;
 
-public class Filter {
+public class Greater {
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(12,3,4,5,6);
+        List<Integer> list = Arrays.asList(5,10,15,20);
 
         list.stream()
-        .filter(x -> x%2==0)
+        .filter(x -> x>10)
         .forEach(System.out::println);
     }
 }
